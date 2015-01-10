@@ -1,31 +1,48 @@
-# RomanNumerals
+# Roman Numerals
 
-TODO: Write a gem description
+Write a function to convert from normal numbers to Roman Numerals: e.g.
 
-## Installation
+The Romans were a clever bunch. They conquered most of Europe and ruled
+it for hundreds of years. They invented concrete and straight roads and
+even bikinis. One thing they never discovered though was the number
+zero. This made writing and dating extensive histories of their exploits
+slightly more challenging, but the system of numbers they came up with
+is still in use today. For example the BBC uses Roman numerals to date
+their programmes.
 
-Add this line to your application's Gemfile:
+The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice
+these letters have lots of straight lines and are hence easy to hack
+into stone tablets).
 
-```ruby
-gem 'roman_numerals'
+```
+ 1  => I
+10  => X
+ 7  => VII
 ```
 
-And then execute:
+There is no need to be able to convert numbers larger than about 3000.
+(The Romans themselves didn't tend to go any higher)
 
-    $ bundle
+Wikipedia says: Modern Roman numerals ... are written by expressing each
+digit separately starting with the left most digit and skipping any
+digit with a value of zero.
 
-Or install it yourself as:
+To see this in practice, consider the example of 1990.
 
-    $ gem install roman_numerals
+In Roman numerals 1990 is MCMXC:
 
-## Usage
+1000=M
+900=CM
+90=XC
 
-TODO: Write usage instructions here
+2008 is written as MMVIII:
 
-## Contributing
+2000=MM
+8=VIII
 
-1. Fork it ( https://github.com/[my-github-username]/roman_numerals/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+See also: http://www.novaroma.org/via_romana/numbers.html
+
+
+## Source
+
+The Roman Numeral Kata [view source](http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals)
