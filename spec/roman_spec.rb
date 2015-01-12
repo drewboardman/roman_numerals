@@ -13,6 +13,7 @@ ROMANS = {
   35 => 'XXXV',
   44 => 'XLIV',
   98 => 'XCVIII',
+  404 => 'CDIV',
   904 => 'CMIV',
   909 => 'CMIX',
   3200 => 'MMMCC'
@@ -22,7 +23,7 @@ ROMANS.each do |number, roman|
   describe "#convert" do
     it "returns #{roman} when given #{number}" do
       numeral = Roman.new(number)
-      expect(numeral.romanize).to eq(roman)  
+      expect(numeral.roman_equivalent).to eq(roman)  
     end
   end
 end
